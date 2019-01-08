@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, BrowserRouter, Redirect, Switch } from 'react-router-dom'
+import { Route, HashRouter, Redirect, Switch } from 'react-router-dom'
 import Login from './Login'
 import Register from './Register'
 import Home from './Home'
@@ -70,10 +70,10 @@ export default class App extends Component {
 
   render() {
     return this.state.loading === true ? <p>Loading</p> : (
-      <BrowserRouter>
+      <HashRouter>
         <div>
           <Navbar color="faded" light toggleable>
-            <NavbarBrand href="/"><img src={Logo} alt="World Affairs Conference Logo" className="nav-image"/></NavbarBrand>
+            <NavbarBrand href="/donna/#/"><img src={Logo} alt="World Affairs Conference Logo" className="nav-image"/></NavbarBrand>
             <NavbarToggler right onClick={this.toggle} />
 
             <Collapse isOpen={this.state.isOpen} navbar>
@@ -82,14 +82,14 @@ export default class App extends Component {
                   <NavLink href={Links["site"]}>WAC {Year}</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/dashboard">Dashboard</NavLink>
+                  <NavLink href="/donna/#/dashboard">Dashboard</NavLink>
                 </NavItem>
                 {this.state.authed
                   ?<NavItem>
                     <NavLink onClick={() => {logout()}} >Log Out</NavLink>
                    </NavItem>
                   :<NavItem>
-                    <NavLink href="/login">Log In</NavLink>
+                    <NavLink href="/donna/#/login">Log In</NavLink>
                    </NavItem>
                 }
               </Nav>
@@ -110,7 +110,7 @@ export default class App extends Component {
           <Footer/>
         </div>
 
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }

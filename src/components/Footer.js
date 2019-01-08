@@ -44,7 +44,7 @@ export default class Footer extends Component {
 				            The World Affairs Conference online registration system, made by the <a href={Links['github']}>WAC team</a> with <a href={Links['repo']}><FontAwesome name="code" className="black-icon"/></a> and <FontAwesome name="heart" style={redHeart}/>
 				          </p>
 									<p>
-							      Have any questions or concerns? Check out <a href="https://world.ac/faq/">our FAQ</a> or get in touch with us!
+							      Have any questions or concerns? Check out <a href="http://worldaffairs.ucc.on.ca/faq/">our FAQ</a> or get in touch with us!
 							    </p>
 				        </div>
 				      </center>

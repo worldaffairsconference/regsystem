@@ -47,7 +47,7 @@ export default class Login extends Component {
           <button  className="btn btn-primary">Login</button>
         </form>
         <br/>
-        <p>If you're not registered, register <a href="/register">here</a>.</p>
+        <p>If you're not registered, register <a href="/donna/#/register">here</a>.</p>
       </div>
     )
   }
