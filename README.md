@@ -8,7 +8,6 @@
 We made Donna using a few cool technologies! While we'll get a full list soon, here's a little preview:
 
 * React
-* Create-React-App
 * Firebase
 * Reactstrap
 * Font Awesome
@@ -28,9 +27,15 @@ Run the following commands:
 ```bash
 npm run setup
 ./port # if you want to change the port
+npm install
 npm start
 ```
 
 When it asks for your Firebase API Key, paste that in. You'll need access to a valid Firebase Plan to run a local instance of this server.
 
 The server will output to `http://127.0.0.1` on the port that you set.
+
+To build the production version and deploy the site on GitHub pages, run this command
+```
+npm run deploy
+```
