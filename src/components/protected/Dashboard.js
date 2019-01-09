@@ -84,7 +84,7 @@ export default class Dashboard extends Component {
         }
         <hr />
         <h3>Payment Instructions:</h3>
-        <p>The ticket prices for the World Affairs Conference {Year} is $45 per student before {EarlyBirdDueDate}, and $50 per student after {EarlyBirdDueDate}. <b>Registration is due by {DueDate}.</b>
+        <p>The ticket prices for the World Affairs Conference {Year} is $45 per student before {EarlyBirdDueDate}, and $55 per student after {EarlyBirdDueDate}. <b>Registration is due by {DueDate}.</b>
         </p>
         <p>
         Financial aid is available upon request - please <a href={Links['email']}>email us at wac@ucc.on.ca</a> for more information.
